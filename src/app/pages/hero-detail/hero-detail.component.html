@@ -1,0 +1,13 @@
+<p>hero-detail works!</p>
+
+<div class="row">
+     <div class="d-flex p-2" *ngFor="let x of heroes.slice(2, 9);">
+        <div *ngif="x._id==value">
+            <app-hero-card [hero]="x"></app-hero-card>
+        
+    </div>
+    <div class="d-flex p-2">{{x.id}}{{x.name}}</div>
+    </div>
+</div>    
+
+
